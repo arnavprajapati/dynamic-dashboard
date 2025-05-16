@@ -1,20 +1,36 @@
-📌 Widget Dashboard
+# 🧠 Productivity Dashboard
 
-A customizable and interactive widget-based dashboard made using HTML, CSS, and JavaScript. This is an ongoing project focused on building a personal productivity & entertainment interface with draggable widgets and background customization.
+A sleek and minimal productivity dashboard to supercharge your daily workflow 🚀  
+Stay focused, organized, and in control — all in one place.
 
-✅ Features Implemented So Far:
+---
 
-  🎥 Background Selector: Choose solid colors or background videos.
-  🎵 Spotify Player Widget: Play, pause, seek, and control audio with a draggable player.
-  ✨ Quotes Generator: Display random quotes with author names (using API).
-  📦 Widget Picker Panel: Toggle widgets like quotes, music, and more.
-  📌 Draggable Widgets: Quotes and songs container can be moved around.
-  ❌ Close Buttons: Easily remove widgets from view.
+## ✨ Features
 
-🧩 Upcoming Features:
-  📝 Sticky Notes
-  ⏱️ Pomodoro Timer
-  ✅ Task Tracker
-  🖥️ Full Screen Toggle
-  🗂️ Kanban Board
-  📺 YouTube/Twitch Widget
+- 📅 **Live Date and Time Display** – Always stay updated with real-time clock.
+- 🌤️ **Weather Integration** – Get your local weather right on your dashboard.
+- 💬 **Daily Quotes** – Boost your mood with motivational and thoughtful quotes.
+- 🔍 **Search Bar** – Google search built right into your homepage.
+- 🎯 **Quick Links** – Your favorite websites just a click away.
+- 🌙 **Dark/Light Mode Toggle** – Switch themes based on your mood.
+
+---
+
+## 🧩 Upcoming Features
+
+- 📝 **Sticky Notes**  
+- ⏱️ **Pomodoro Timer**  
+- ✅ **Task Tracker**  
+- 🖥️ **Full Screen Toggle**  
+- 🗂️ **Kanban Board**  
+- 📺 **YouTube/Twitch Widget**
+
+---
+
+## 📁 Tech Stack
+
+- HTML5  
+- CSS3 (with animations)  
+- JavaScript (Vanilla JS)  
+- OpenWeatherMap API  
+- Quote API
