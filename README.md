@@ -7,12 +7,12 @@ Stay focused, organized, and in control — all in one place.
 
 ## ✨ Features
 
-- 📅 **Live Date and Time Display** – Always stay updated with real-time clock.
-- 🌤️ **Weather Integration** – Get your local weather right on your dashboard.
-- 💬 **Daily Quotes** – Boost your mood with motivational and thoughtful quotes.
-- 🔍 **Search Bar** – Google search built right into your homepage.
-- 🎯 **Quick Links** – Your favorite websites just a click away.
-- 🌙 **Dark/Light Mode Toggle** – Switch themes based on your mood.
+- 🎥 **Background Selector** – Choose solid colors or aesthetic background videos.
+- 🎵 **Spotify Player Widget** – Play, pause, seek, and control audio with a draggable player.
+- ✨ **Quotes Generator** – Display random quotes with author names (using API).
+- 📦 **Widget Picker Panel** – Toggle widgets like quotes, music, and more.
+- 📌 **Draggable Widgets** – Quotes and songs container can be moved around freely.
+- ❌ **Close Buttons** – Easily remove widgets from view.
 
 ---
 
@@ -30,7 +30,11 @@ Stay focused, organized, and in control — all in one place.
 ## 📁 Tech Stack
 
 - HTML5  
-- CSS3 (with animations)  
+- CSS3 (with smooth animations)  
 - JavaScript (Vanilla JS)  
 - OpenWeatherMap API  
 - Quote API
+
+---
+
+> Made with ❤️ by Arnav
