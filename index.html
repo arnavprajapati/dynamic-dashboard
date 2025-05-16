@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work Space</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        .bg-option {
+            width: 15%;
+            background-color: #1e293b;
+            position: absolute;
+            top: 80px;
+            right: 32px;
+            max-height: 450px;
+            overflow-y: auto;
+            display: block;
+        }
+
+        .bg-option::-webkit-scrollbar {
+            display: none;
+        }
+
+        .elem {
+            height: 50px;
+            border-bottom: 2px solid black;
+            display: flex;
+            align-items: center;
+            padding-left: 12px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .elem:hover {
+            background-color: #030728;
+        }
+
+        .color-section {
+            height: 70px;
+            background-color: #1e293b;
+            position: sticky;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .color {
+            width: 100%;
+            padding-left: 12px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .box {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .widgets h1 {
+            font-size: larger;
+        }
+
+        .control {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #1e293b;
+            border-radius: 10px;
+            font-size: medium;
+            gap: 1px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+        }
+
+        .control i {
+            font-size: xx-large;
+        }
+
+        .bg-widget {
+            background-color: #6d28d9;
+        }
+
+        .side {
+            width: 100%;
+            height: 100%;
+            background-color: #1e293b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="w-[100%] max-h-[100vh] bg-[#000]">
+    <div class="container w-[90%] h-[10%] float-end flex justify-end gap-6 items-center pr-8 pt-2 relative">
+        <div class="w-auto h-auto inline-block pb-2 pt-2 pr-4 pl-4 bg-slate-800 rounded-md cursor-pointer">
+            <p class="text-white text-base">Settings</p>
+        </div>
+        <div class="selectWidget w-auto h-auto inline-block pb-2 pt-2 pr-4 pl-4 bg-slate-800 rounded-md cursor-pointer">
+            <p class="text-white text-base">Configure Widgets</p>
+        </div>
+        <div class="bg-button w-auto h-auto inline-block pb-2 pt-2 pr-4 pl-4 bg-slate-800 rounded-md cursor-pointer">
+            <p class="text-white text-base">Must-Visit Locations 🏯🏞️</p>
+        </div>
+    </div>
+    <div class="bg-option">
+        <div class="elem" id="elem1" video-src="https://videos.pexels.com/video-files/9783271/9783271-uhd_2560_1440_24fps.mp4">
+            <p class="text-base">Ladakh</p>
+        </div>
+        <div class="elem" id="elem2" video-src="https://videos.pexels.com/video-files/2881981/2881981-uhd_2560_1440_24fps.mp4">
+            <p class="text-base">Chinese Temple</p>
+        </div>
+        <div class="elem" id="elem3" video-src="https://videos.pexels.com/video-files/10050160/10050160-hd_1920_1080_30fps.mp4">
+            <p class="text-base">Oeschinensee</p>
+        </div>
+        <div class="elem" id="elem4" video-src="https://videos.pexels.com/video-files/5890079/5890079-uhd_2560_1440_30fps.mp4">
+            <p class="text-base">Japan</p>
+        </div>
+        <div class="elem" id="elem5" video-src="https://videos.pexels.com/video-files/3654441/3654441-uhd_2560_1440_30fps.mp4">
+            <p class="text-base">Switzerland</p>
+        </div>
+        <div class="elem" id="elem6" video-src="/assets/korea gaurad ceremony.mp4">
+            <p class="text-base">South Korea</p>
+        </div>
+        <div class="elem" id="elem7" video-src="">
+            <p class="text-base">Coorg</p>
+        </div>
+        <div class="elem" id="elem8" video-src="">
+            <p class="text-base">Aishmukam Dargha</p>
+        </div>
+        <div class="color-section text-white" id="elem10" video-src="">
+            <p class="text-base pb-3 pl-20">Color</p>
+            <div class="color">
+                <div class="box bg-black" color="black"></div>
+                <div class="box bg-blue-600" color="blue"></div>
+                <div class="box bg-red-600" color="crimson"></div>
+                <div class="box bg-orange-500" color="orange"></div>
+                <div class="box bg-green-600" color="green"></div>
+                <div class="box bg-pink-600" color="pink"></div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="widgets w-[25%] h-[65%] bg-[#1e293b] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] grid place-items-center rounded-lg text-white grid-rows-[14%_80%_6%] hidden">
+        <i class="close-widget ri-close-fill absolute top-2 right-2 text-xl rounded-1/2 text-red-700 cursor-pointer"></i>
+        <h1 class="pt-10 pb-8">Widgets Control</h1>
+        <div class="widgetOption w-[80%] h-[100%] rounded-lg grid grid-cols-3 grid-rows-4 gap-1 ">
+            <div class="control">
+                <p>Spotify</p>
+                <i class="ri-spotify-fill"></i>
+            </div>
+            <div class="control">
+                <p>Chill Music</p>
+                <i class="ri-music-2-line"></i>
+            </div>
+            <div class="control">
+                <p>Task Tracker</p>
+                <i class="ri-list-check-3"></i>
+            </div>
+            <div class="control">
+                <p>Promodoro Timer</p>
+                <i class="ri-timer-line"></i>
+            </div>
+            <div class="control">
+                <p>Theme</p>
+                <i class="ri-sun-line"></i>
+            </div>
+            <div class="control">
+                <p>Sticky Notes</p>
+                <i class="ri-sticky-note-fill"></i>
+            </div>
+            <div class="control">
+                <p>Reset</p>
+                <i class="ri-loop-left-line"></i>
+            </div>
+            <div class="control">
+                <p>Full Screen</p>
+                <i class="ri-fullscreen-line"></i>
+            </div>
+            <div class="control">
+                <p>Quotes</p>
+                <i class="ri-chat-quote-fill"></i>
+            </div>
+            <div class="control">
+                <p>Twitch</p>
+                <i class="ri-twitch-fill"></i>
+            </div>
+            <div class="control">
+                <p>Youtube</p>
+                <i class="ri-youtube-fill"></i>
+            </div>
+            <div class="control">
+                <p>Kanban board</p>
+                <i class="ri-kanban-view-2"></i>
+            </div>
+        </div>
+    </div>
+    <div
+        class="side-widget w-[5%] h-[98%] rounded-tl-md rounded-tr-md gap-1 text-white grid grid-rows-12 place-items-center text-2xl rounded-md absolute top-2 left-3 ">
+        <!-- <div class="side"><i class="ri-music-2-line"></i></div>
+        <div class="side"><i class="ri-spotify-fill"></i></div>
+        <div class="side"><i class="ri-list-check-3"></i></div>
+        <div class="side"><i class="ri-timer-line"></i></div>
+        <div class="side"><i class="ri-sticky-note-fill"></i></div>
+        <div class="side"><i class="ri-loop-left-line"></i></div>
+        <div class="side"><i class="ri-sun-line"></i></div>
+        <div class="side"><i class="ri-chat-quote-fill"></i></div>
+        <div class="side"><i class="ri-twitch-fill"></i></div>
+        <div class="side"><i class="ri-fullscreen-line"></i></div>
+        <div class="side"><i class="ri-kanban-view-2"></i></div>
+        <div class="side"><i class="ri-youtube-fill"></i></div> -->
+    </div>
+    <div class="spotifyContainer w-[28%] h-[70%] bg-slate-800 grid place-items-center absolute rounded-xl left-[25%] top-[10%] hidden">
+        <i class="closeSpotify ri-close-fill absolute top-0 right-[10px] text-2xl text-red-600 cursor-pointer"></i>
+        <div class="w-[90%] h-[90%] grid grid-rows-[40%_60%]">
+            <div class="topContainer grid grid-rows-[70%_30%] place-items-center relative bg-[#2a2a2a] rounded-tl-2xl rounded-tr-xl resize-none cursor-grabbing">
+                <div class="flex w-[95%] items-center gap-4 pt-4">
+                    <div class="w-[40%] pl-2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVkA63mJ773ZH94lP2B7Ml7Z1IzXJE9AOROw&s" 
+                             class="image w-[90%] rounded-2xl" alt="">
+                    </div>
+                    <div class="text-white">
+                        <h1 class="musicName text-xl font-sans font-[700]">Lofi Beats</h1>
+                        <h1 class=" text-gray-400">Spotify</h1>
+                        <h1 class="singerName text-gray-400 pt-4">Singer Name</h1>
+                        <audio id="audio" src="Tum Se - Teri Baaton Mein Aisa Uljha Jiya 320 Kbps.mp3"></audio>
+                        <i class="ri-spotify-fill absolute top-2 right-3 text-5xl"></i>
+                    </div>
+                </div>
+                <div class="flex text-white w-[100%] items-center pl-4 gap-12">
+                    <div class="w-[60%] flex items-center gap-2 text-2xl">
+                        <i class="ri-skip-back-line"></i>
+                        <i class="miniBackward ri-skip-back-mini-line"></i>
+                        <input type="range" id="seekBar" min="0" value="0" class="h-1">
+                        <i class="miniForward ri-skip-forward-mini-line"></i>
+                        <i class="ri-skip-forward-line"></i>
+                    </div>
+                    <div class="flex items-center ">
+                        <p><span class="starting">00:00</span> / <span class="total">00:00</span></p>
+                        <i class="playCircle ri-play-circle-fill text-6xl absolute top-[85px] right-[10px] cursor-pointer" onclick="togglePlayPause()"></i>
+                        <i class="pauseCircle ri-pause-circle-fill text-6xl absolute top-[85px] right-[10px] cursor-pointer hidden" onclick="togglePlayPause()"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="songContainer bg-black max-h-[350px] h-[100%] overflow-y-auto overflow-x-hidden rounded-br-xl rounded-bl-xl resize-none">
+                <!-- <div class="w-[100%] h-[20%] pt-4 grid grid-cols-[20%_50%_30%] items-center ">
+                    
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
